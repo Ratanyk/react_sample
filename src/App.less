@@ -1,0 +1,42 @@
+//app.less - USE ONLY FOR GLOBAL STYLES
+@import "./variables.less";
+
+.creation-progressbar.progress {
+  height: 4px;
+}
+
+.modal-close-icon {
+  position: absolute;
+  right   : 2rem;
+  color   : #888;
+}
+
+.btn-danger {
+  background-color: 'bg-jnj-red' !important;
+  // border-color :  #ab0009  !important;
+}
+
+//ant design customs
+.ant {
+  &icon {
+    vertical-align: 2px !important;
+  }
+
+  //button styles
+  &-btn {
+    &-jnj-blue {
+      border-color: @jnj-blue;
+      color       : @jnj-blue;
+
+      &:hover {
+        background-color: @jnj-blue;
+        border-color    : @jnj-blue;
+        color           : @jnj-white;
+      }
+    }
+  }
+}
+
+body{
+  font-family: 'Roboto', sans-serif !important;
+}

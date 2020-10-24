@@ -1,0 +1,56 @@
+{
+  "name": "ERP1",
+  "type": "waterfall",
+  "construct": "NAME_PROMPT",
+  "intent": "Weather",
+  "description": "dialog for getting order status",
+  "steps": [{
+      "name": "systemname",
+      "construct": "CHOICE_PROMPT",
+      "promptOptions": {
+        "prompt": "Selectt an ERP system",
+        "choices": [
+          "ROTC-MX2",
+          "BTB",
+          "MERCURY"
+        ]
+      }
+    },
+    {
+      "name": "controlID",
+      "construct": "CHOICE_PROMPT",
+      "promptOptions": {
+        "prompt": "Select a sytem control type",
+        "choices": [
+          "ORDSTATUS",
+          "ORDRELEASE",
+          "ORDFLOW"
+        ]
+      }
+    },
+    {
+      "name": "orderID",
+      "construct": "NAME_PROMPT",
+      "promptOptions": {
+        "prompt": "Enter order ID "
+      }
+    },
+    {
+      "name": "confirm",
+      "construct": "CONFIRM_PROMPT",
+      "promptOptions": {
+        "prompt": "Do you want to proceed?"
+      }
+    },
+    {
+      "name": "summary",
+      "url": "https://dev2.jnjux.com/api/serverscript/erp_api_connect/CALLAPI",
+      "body": {
+        "SYSTEM": "systemname",
+        "CONTROLID": "controlID",
+        "ORDERID": "orderID"
+      },
+      "msg": "Please wait till we fetch information from SAP server"
+    }
+  ]
+}

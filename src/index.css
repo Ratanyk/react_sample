@@ -1,0 +1,112 @@
+/* VARIABLES */
+/* ======================= */
+.weight-400 {
+  font-weight: 400;
+}
+
+.weight-500 {
+  font-weight: 500;
+}
+
+.weight-600 {
+  font-weight: 600;
+}
+
+.weight-700 {
+  font-weight: 700;
+}
+
+.weight-900 {
+  font-weight: 900;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.fs-20 {
+  font-size: 20px;
+}
+
+.fs-25 {
+  font-size: 25px;
+}
+
+.fs-30 {
+  font-size: 30px;
+}
+
+.fs-35 {
+  font-size: 35px;
+}
+
+.fs-37 {
+  font-size: 37px;
+}
+
+/* GLOBAL STYLES */
+/* ======================= */
+body {
+  /* background-color: #f5f7f9 !important; */
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.section-name-wrapper {
+  font-size: 35px;
+  color    : rgb(0, 0, 0, 0.65);
+}
+
+.card {
+  border-color: #f5f7f9;
+}
+
+.button-outline-primary {
+  color       : #FF7270;
+  border-color: #FF7270
+}
+
+.button-primary:hover {
+  background-color: #FF7270;
+  border-color    : #FF7270;
+}
+
+.text-extra-muted {
+  color: #aaa;
+}
+
+.extra-small {
+  letter-spacing: 0.7px;
+  font-size     : 75%;
+}
+
+.smoothen-transition {
+  -webkit-transition: 0.2s ease-out;
+  -moz-transition   : 0.2s ease-out;
+  -o-transition     : 0.2s ease-out;
+  transition        : 0.2s ease-out;
+}
+
+.smoothen-transition * {
+  -webkit-transition: 0.2s ease-out;
+  -moz-transition   : 0.2s ease-out;
+  -o-transition     : 0.2s ease-out;
+  transition        : 0.2s ease-out;
+}
+
+.hover-theme {
+  -webkit-transition: 0.2s ease-out;
+  -moz-transition   : 0.2s ease-out;
+  -o-transition     : 0.2s ease-out;
+  transition        : 0.2s ease-out;
+}
+
+.hover-theme:hover {
+  color: #FF7270 !important;
+}
+
+.text-default {
+  color: #333;
+}
